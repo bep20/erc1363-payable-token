@@ -30,7 +30,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/vittominacori/erc1363-payable-token.git"
+    "url": "https://github.com/BEP20/erc1363-payable-token.git"
   },
   "keywords": [
     "solidity",
@@ -40,12 +40,12 @@
     "token",
     "erc1363"
   ],
-  "author": "Vittorio Minacori (https://github.com/vittominacori)",
+  "author": "BEP20 Generator (https://github.com/BEP20)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/vittominacori/erc1363-payable-token/issues"
+    "url": "https://github.com/BEP20/erc1363-payable-token/issues"
   },
-  "homepage": "https://vittominacori.github.io/erc1363-payable-token",
+  "homepage": "https://BEP20.github.io/erc1363-payable-token",
   "dependencies": {
     "@openzeppelin/contracts": "4.4.1"
   },

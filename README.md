@@ -1,9 +1,9 @@
 # ERC-1363 Payable Token
 
 [![NPM Package](https://img.shields.io/npm/v/erc-payable-token.svg?style=flat-square)](https://www.npmjs.org/package/erc-payable-token)
-[![CI](https://github.com/vittominacori/erc1363-payable-token/actions/workflows/ci.yml/badge.svg)](https://github.com/vittominacori/erc1363-payable-token/actions/workflows/ci.yml)
-[![Coverage Status](https://coveralls.io/repos/github/vittominacori/erc1363-payable-token/badge.svg?branch=master)](https://coveralls.io/github/vittominacori/erc1363-payable-token?branch=master)
-[![MIT licensed](https://img.shields.io/github/license/vittominacori/erc1363-payable-token.svg)](https://github.com/vittominacori/erc1363-payable-token/blob/master/LICENSE)
+[![CI](https://github.com/bep20/erc1363-payable-token/actions/workflows/ci.yml/badge.svg)](https://github.com/bep20/erc1363-payable-token/actions/workflows/ci.yml)
+[![Coverage Status](https://coveralls.io/repos/github/bep20/erc1363-payable-token/badge.svg?branch=master)](https://coveralls.io/github/bep20/erc1363-payable-token?branch=master)
+[![MIT licensed](https://img.shields.io/github/license/bep20/erc1363-payable-token.svg)](https://github.com/bep20/erc1363-payable-token/blob/master/LICENSE)
 
 ERC-1363 allows to implement an ERC-20 token that can be used for payments.
 
@@ -58,7 +58,7 @@ This repo contains:
 
 ### IERC1363
 
-[IERC1363.sol](https://github.com/vittominacori/erc1363-payable-token/blob/master/contracts/token/ERC1363/IERC1363.sol)
+[IERC1363.sol](https://github.com/bep20/erc1363-payable-token/blob/master/contracts/token/ERC1363/IERC1363.sol)
 
 Interface for a Payable Token contract as defined in [ERC-1363 Payable Token](https://eips.ethereum.org/EIPS/eip-1363).
 
@@ -75,13 +75,13 @@ interface IERC1363 is IERC20, IERC165 {
 
 ### ERC1363
 
-[ERC1363.sol](https://github.com/vittominacori/erc1363-payable-token/blob/master/contracts/token/ERC1363/ERC1363.sol)
+[ERC1363.sol](https://github.com/bep20/erc1363-payable-token/blob/master/contracts/token/ERC1363/ERC1363.sol)
 
 Implementation of an IERC1363 interface.
 
 ### IERC1363Receiver
 
-[IERC1363Receiver.sol](https://github.com/vittominacori/erc1363-payable-token/blob/master/contracts/token/ERC1363/IERC1363Receiver.sol)
+[IERC1363Receiver.sol](https://github.com/bep20/erc1363-payable-token/blob/master/contracts/token/ERC1363/IERC1363Receiver.sol)
 
 Interface for any contract that wants to support `transferAndCall` or `transferFromAndCall` from ERC1363 token contracts.
 
@@ -93,7 +93,7 @@ interface IERC1363Receiver {
 
 ### IERC1363Spender
 
-[IERC1363Spender.sol](https://github.com/vittominacori/erc1363-payable-token/blob/master/contracts/token/ERC1363/IERC1363Spender.sol)
+[IERC1363Spender.sol](https://github.com/bep20/erc1363-payable-token/blob/master/contracts/token/ERC1363/IERC1363Spender.sol)
 
 Interface for any contract that wants to support `approveAndCall` from ERC1363 token contracts.
 
@@ -105,7 +105,7 @@ interface IERC1363Spender {
 
 ### ERC1363Payable
 
-[ERC1363Payable.sol](https://github.com/vittominacori/erc1363-payable-token/blob/master/contracts/payment/ERC1363Payable.sol)
+[ERC1363Payable.sol](https://github.com/bep20/erc1363-payable-token/blob/master/contracts/payment/ERC1363Payable.sol)
 
 Implementation proposal of a contract that wants to accept ERC1363 payments. It intercepts what is the ERC1363 token desired for payments and throws if another is sent.
 
@@ -119,7 +119,7 @@ It also implements a `approvalReceived` function that can be overridden to make 
 
 ### ERC1363PayableCrowdsale
 
-[ERC1363PayableCrowdsale.sol](https://github.com/vittominacori/erc1363-payable-token/blob/master/contracts/examples/ERC1363PayableCrowdsale.sol)
+[ERC1363PayableCrowdsale.sol](https://github.com/bep20/erc1363-payable-token/blob/master/contracts/examples/ERC1363PayableCrowdsale.sol)
 
 As example: an Implementation of a classic token Crowdsale, but paid with ERC1363 tokens instead of ETH.
 
@@ -200,4 +200,4 @@ npm run hardhat:coverage
 
 ## License
 
-Code released under the [MIT License](https://github.com/vittominacori/erc1363-payable-token/blob/master/LICENSE).
+Code released under the [MIT License](https://github.com/bep20/erc1363-payable-token/blob/master/LICENSE).

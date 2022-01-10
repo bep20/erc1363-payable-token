@@ -12,7 +12,7 @@ import "../token/ERC1363/IERC1363Spender.sol";
 
 /**
  * @title ERC1363Payable
- * @author Vittorio Minacori (https://github.com/vittominacori)
+ * @author BEP20 Generator (https://github.com/BEP20)
  * @dev Implementation proposal of a contract that wants to accept ERC1363 payments
  */
 contract ERC1363Payable is IERC1363Receiver, IERC1363Spender, ERC165, Context {
